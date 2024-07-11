@@ -11,7 +11,7 @@
              githooks="integration/git-hooks"
              remote="https://fuchsia.googlesource.com/fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
-             revision="d651b7aa77cbdf1839a82c31daa3c609abc94972"/>
+             revision="9faf58769ce7f3ca0b04a405e2827f719b9a8b66"/>
   </projects>
   <hooks>
     <hook name="install-environment"
