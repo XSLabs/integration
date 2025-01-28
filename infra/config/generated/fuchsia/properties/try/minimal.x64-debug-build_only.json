@@ -15,7 +15,6 @@
       "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/try/minimal.x64-debug-build_only.textproto"
     },
     "checkout": {
-      "enable_submodules": true,
       "manifest": "flower",
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
