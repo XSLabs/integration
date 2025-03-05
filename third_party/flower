@@ -90,7 +90,7 @@
              path="third_party/antlion"
              remote="https://fuchsia.googlesource.com/antlion"
              gerrithost="https://fuchsia-review.googlesource.com"
-             revision="b131631028d63ac9e5608625c26c368005fd1ee3"/>
+             revision="726c31af11c5e036b1bfcd91c218c0ea82dbb1fd"/>
     <project name="third_party/bcmdhd"
              gitsubmoduleof="fuchsia"
              path="third_party/bcmdhd"
