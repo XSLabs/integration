@@ -1,18 +1,6 @@
 [
     {
         "package": "fuchsia/cts/linux-amd64",
-        "path": "prebuilt/ctf/f23/{{.OS}}-{{.Arch}}",
-        "version": "git_revision:dd012b5cd577aa33e9a61723256490e55062a1ed",
-        "instance_id": "-VJfP3ItrZU9Mp2Z4O6NOSfC1lK3Zj5tuhdonKlmKR8C"
-    },
-    {
-        "package": "fuchsia/cts/linux-amd64",
-        "path": "prebuilt/ctf/f25/{{.OS}}-{{.Arch}}",
-        "version": "git_revision:9c5012cad2e22c8a24587ed4b8fcfb8aeab12663",
-        "instance_id": "taY-PJtHM-Y50l1uLX8nyg-TdEriro08CjHOfcpJq3wC"
-    },
-    {
-        "package": "fuchsia/cts/linux-amd64",
         "path": "prebuilt/ctf/f26/{{.OS}}-{{.Arch}}",
         "version": "git_revision:c5764ec2bec875d32e97f4ec6a611a9adb31208b",
         "instance_id": "iSeKOrcsbk-p8jKql5ROSQRC8lwggUbDZJLy7hb7lYAC"
@@ -24,16 +12,10 @@
         "instance_id": "5TnRq5bq4Dk_uaaW06fsFgl9QUjSSBoOS5gUDSPd3BUC"
     },
     {
-        "package": "fuchsia/development/product_bundles/v2",
-        "path": "prebuilt/ctf/f23/{{.OS}}-{{.Arch}}/product_bundles",
-        "version": "f23",
-        "instance_id": "t0wO4E6dPnIKITQUOhzkHGhjHt10zhzoTEmFv8cSgi8C"
-    },
-    {
-        "package": "fuchsia/development/product_bundles/v2",
-        "path": "prebuilt/ctf/f25/{{.OS}}-{{.Arch}}/product_bundles",
-        "version": "f25",
-        "instance_id": "hMP3bdzdAKIua7oUsuA4zHXcPk-82BBB9LT2TMJ4WhYC"
+        "package": "fuchsia/cts/linux-amd64",
+        "path": "prebuilt/ctf/f28/{{.OS}}-{{.Arch}}",
+        "version": "git_revision:c94f6338184fffa614a220d288afc2c515b06e78",
+        "instance_id": "Igyh8LN_hBw_HQjRYoKp8qWixjogv8spWWZipqFQSwIC"
     },
     {
         "package": "fuchsia/development/product_bundles/v2",
@@ -48,21 +30,15 @@
         "instance_id": "TZ7htfqHXILzUtUeBFxE-CVqmtYTbzJGDdPA9p47ozAC"
     },
     {
+        "package": "fuchsia/development/product_bundles/v2",
+        "path": "prebuilt/ctf/f28/{{.OS}}-{{.Arch}}/product_bundles",
+        "version": "f28",
+        "instance_id": "A5PZow_Ququ9jMD07p0cIr-Nt5xlbkVmUYx_MF8a0tkC"
+    },
+    {
         "package": "fuchsia/infra/test_durations",
         "version": "version:20250806103105",
         "instance_id": "xAbkxI_1_kMJ4ZqVhyA9GpdtLp4XZBWcwdnOsjvFaYgC"
-    },
-    {
-        "package": "fuchsia/sdk/core/linux-amd64",
-        "path": "prebuilt/ctf/f23/{{.OS}}-{{.Arch}}/sdk",
-        "version": "f23",
-        "instance_id": "Jid9aTcJW2Zjt_IP5fgJqwObySBAPPORiM-PQptiw7MC"
-    },
-    {
-        "package": "fuchsia/sdk/core/linux-amd64",
-        "path": "prebuilt/ctf/f25/{{.OS}}-{{.Arch}}/sdk",
-        "version": "f25",
-        "instance_id": "F8IOuk4fcnZkqHMLmFbUDEeX-tkQPIFkCwykHrS9C3UC"
     },
     {
         "package": "fuchsia/sdk/core/linux-amd64",
@@ -75,5 +51,11 @@
         "path": "prebuilt/ctf/f27/{{.OS}}-{{.Arch}}/sdk",
         "version": "f27",
         "instance_id": "DkBPGy28bLzMUiF7T9jOaxtHqdOtf0h39HgxIQf_bbgC"
+    },
+    {
+        "package": "fuchsia/sdk/core/linux-amd64",
+        "path": "prebuilt/ctf/f28/{{.OS}}-{{.Arch}}/sdk",
+        "version": "f28",
+        "instance_id": "1rRju8ep5388Q4gMmUTZ7G5pbPCqOTtDyP3b7mHbXNcC"
     }
 ]

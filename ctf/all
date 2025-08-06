@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="f23"/>
-    <localimport file="f25"/>
     <localimport file="f26"/>
     <localimport file="f27"/>
+    <localimport file="f28"/>
   </imports>
 </manifest>
