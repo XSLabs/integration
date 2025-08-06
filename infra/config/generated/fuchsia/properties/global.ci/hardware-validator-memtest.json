@@ -1,0 +1,12 @@
+{
+  "device_type": "Intel NUC Kit NUC11TNHv5",
+  "max_bot_count": 5,
+  "min_capacity": 0.5,
+  "no_python2": true,
+  "old_bot_ttl": "2592000s",
+  "pool": "fuchsia.tests",
+  "recipe": "hardware_validator",
+  "service_account": "hardware-validator-builder@fuchsia-service-accounts.iam.gserviceaccount.com",
+  "test_interval": "604800s",
+  "validation_type": "memtest"
+}
