@@ -24,6 +24,6 @@
              path="third_party/antlion"
              remote="https://fuchsia.googlesource.com/antlion"
              gerrithost="https://fuchsia-review.googlesource.com"
-             revision="c99a8af93034579ee24d8d8f0b212d8508b3864d"/>
+             revision="d6ca148549d58962f73a7d9094f92346e0d5bea1"/>
   </projects>
 </manifest>
