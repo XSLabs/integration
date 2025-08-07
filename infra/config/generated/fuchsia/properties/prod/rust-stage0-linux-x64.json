@@ -3,7 +3,6 @@
   "channel": "nightly",
   "cipd_ref_override": "latest_stage0",
   "default_ref": "refs/heads/main",
-  "enable_pgo": true,
   "ignore_existing_package": true,
   "no_python2": true,
   "product": "rust",
