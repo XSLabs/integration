@@ -1,0 +1,32 @@
+{
+  "artifact_specs": [
+    {
+      "cipd_path": "fuchsia/third_party/aosp_gki/virt",
+      "file_path": "LICENSES/preferred/GPL-2.0",
+      "source": {
+        "destination": "LICENSE",
+        "project": "kernel/common"
+      },
+      "target": "kernel_virt_aarch64"
+    },
+    {
+      "cipd_path": "fuchsia/third_party/aosp_gki/virt",
+      "file": {
+        "destination": "arm64/Image.gz"
+      },
+      "file_path": "Image.gz",
+      "target": "kernel_virt_aarch64"
+    },
+    {
+      "cipd_path": "fuchsia/third_party/aosp_gki/virt",
+      "file": {
+        "destination": "arm64_16k/Image.gz"
+      },
+      "file_path": "Image.gz",
+      "target": "kernel_virt_aarch64_16k"
+    }
+  ],
+  "git_branch": "aosp_kernel-common-android-mainline",
+  "no_python2": true,
+  "recipe": "contrib/android_artifact_downloader"
+}
