@@ -27,7 +27,7 @@
     }
   ],
   "dry_run": true,
-  "git_branch": "aosp_kernel-common-android-mainline",
+  "git_branch": "aosp_kernel-common-android16-6.12-2025-07",
   "no_python2": true,
   "recipe": "contrib/android_artifact_downloader"
 }
