@@ -1,6 +1,5 @@
 {
   "bucket": "prod",
-  "build_set_mode": "RUST",
   "input_llvm_builder_bucket": "prod",
   "input_llvm_builders": [
     "clang-linux-x64",
@@ -18,17 +17,17 @@
     "rust-mac-arm64"
   ],
   "llvm_repo": "https://llvm.googlesource.com/llvm-project",
-  "llvm_revision": "integration",
   "no_python2": true,
   "recipe": "contrib/rust_llvm_trigger",
   "rust_repo": "https://fuchsia.googlesource.com/third_party/rust",
+  "rust_revision": "integration",
   "start_time_delta_days": 2,
   "timeout_secs": 21600,
   "triggers": [
-    "rust_llvm-integration-linux-x64",
-    "rust_llvm-integration-linux-arm64",
-    "rust_llvm-integration-mac-x64",
-    "rust_llvm-integration-mac-arm64",
-    "rust_llvm-integration-windows-x64"
+    "rust-integration-llvm-latest-linux-x64",
+    "rust-integration-llvm-latest-linux-arm64",
+    "rust-integration-llvm-latest-mac-x64",
+    "rust-integration-llvm-latest-mac-arm64",
+    "rust-integration-llvm-latest-windows-x64"
   ]
 }
