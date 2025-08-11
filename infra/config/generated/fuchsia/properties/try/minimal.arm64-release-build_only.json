@@ -9,8 +9,6 @@
   "recipe": "fuchsia/build",
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
-    "board_cipd_prefix": "fuchsia/assembly/boards/",
-    "board_input_bundle_set_cipd_prefix": "fuchsia/assembly/board_input_bundles/",
     "build": {
       "enable_sandboxing": true,
       "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/try/minimal.arm64-release-build_only.textproto",
@@ -21,7 +19,6 @@
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
     },
-    "gcs_bucket": "fuchsia-build",
-    "platform_artifacts_cipd_path": "fuchsia/assembly/platform/arm64"
+    "gcs_bucket": "fuchsia-build"
   }
 }
