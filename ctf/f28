@@ -5,7 +5,7 @@
     <package name="fuchsia/cts/${platform}"
              path="prebuilt/ctf/f28/{{.OS}}-{{.Arch}}"
              platforms="linux-amd64"
-             version="git_revision:10f5b07b92bc0c7072b26dd8ce50d392eb2b502c" />
+             version="git_revision:3f16f2531ead94b16ac3de36d179bb01956df4fc" />
     <package name="fuchsia/sdk/core/${platform}"
              path="prebuilt/ctf/f28/{{.OS}}-{{.Arch}}/sdk"
              platforms="linux-amd64"
