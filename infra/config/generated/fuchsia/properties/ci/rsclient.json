@@ -1,0 +1,10 @@
+{
+  "no_python2": true,
+  "recipe": "run_script",
+  "remote": "https://fuchsia.googlesource.com/rsclient",
+  "script_configs": [
+    {
+      "script": "scripts/infra/presubmit.sh"
+    }
+  ]
+}
