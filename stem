@@ -7,7 +7,7 @@
             manifest="manifests/platform"
             root=""
             remote="https://fuchsia.googlesource.com/fuchsia"
-            revision="55c68c121172bd8de17cc2d1389f75597fc35398"/>
+            revision="cdf4b698ec600cf916a6e9ca0e17622c2b9bfacf"/>
   </imports>
   <projects>
     <project name="cobalt"
