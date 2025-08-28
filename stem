@@ -20,10 +20,5 @@
              remote="https://fuchsia.googlesource.com/cobalt-registry"
              revision="1c4463a853d64efb552488117bfc716f40ec9e69"
              gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="antlion"
-             path="third_party/antlion"
-             remote="https://fuchsia.googlesource.com/antlion"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             revision="020e2120310d860fc70bc0a50befec4beec06a29"/>
   </projects>
 </manifest>
