@@ -4,6 +4,7 @@
 compilation_mode: COMPILATION_MODE_DEBUG
 board: "boards/arm64.gni"
 product: "products/core.gni"
+gn_args: "allowed_test_device_types = [ \"GCE\" ]"
 gn_args: "basic_env_names = [ \"gce\" ]"
 gn_args: "build_should_trace_actions = true"
 gn_args: "platform_enable_user_pci = true"
