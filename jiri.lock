@@ -14,8 +14,8 @@
     {
         "package": "fuchsia/cts/linux-amd64",
         "path": "prebuilt/ctf/f28/{{.OS}}-{{.Arch}}",
-        "version": "git_revision:199ec8f5d9fb5643b0881ff69d8597ac96fa22d7",
-        "instance_id": "-VfN5PqJx1IEGp-K3HW3B7jaY4XSWfJupebGKH7JLO4C"
+        "version": "git_revision:700fa56a09596f8ca813768e0374fe895f554ef1",
+        "instance_id": "p-bPW9pAHPOcuWh6Qh1G0dHgtCf-D8BkFbz06YqaaYQC"
     },
     {
         "package": "fuchsia/development/product_bundles/v2",
