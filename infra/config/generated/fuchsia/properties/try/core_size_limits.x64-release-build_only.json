@@ -22,7 +22,6 @@
       "manifest": "flower",
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
-    },
-    "gcs_bucket": "fuchsia-build"
+    }
   }
 }

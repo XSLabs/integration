@@ -14,7 +14,6 @@
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
     },
-    "gcs_bucket": "fuchsia-build",
     "test": {
       "allow_no_tests": true,
       "botanist_grace_period_secs": 60,
