@@ -1,6 +1,7 @@
 {
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
+  "skip_building_fuchsia_on_cq_retry": true,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
