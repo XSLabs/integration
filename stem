@@ -13,7 +13,7 @@
     <project name="cobalt"
              path="third_party/cobalt"
              remote="https://fuchsia.googlesource.com/cobalt"
-             revision="4385d3b1ca36f91d7f56a20bcd1b02cd13ea8775"
+             revision="3cac012aa13289208f24b2b537eef78f05585901"
              gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="cobalt-registry"
              path="third_party/cobalt_config"
