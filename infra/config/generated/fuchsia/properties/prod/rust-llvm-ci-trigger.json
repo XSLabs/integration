@@ -19,7 +19,7 @@
   "llvm_repo": "https://llvm.googlesource.com/llvm-project",
   "no_python2": true,
   "recipe": "contrib/rust_llvm_trigger",
-  "rust_repo": "https://fuchsia.googlesource.com/third_party/rust",
+  "rust_repo": "https://rust.googlesource.com/rust",
   "start_time_delta_days": 2,
   "timeout_secs": 21600,
   "triggers": [
