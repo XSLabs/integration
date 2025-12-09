@@ -1,0 +1,11 @@
+{
+  "fallback_ref": "main",
+  "no_python2": true,
+  "recipe": "run_script",
+  "remote": "https://fuchsia.googlesource.com/fuchsia",
+  "script_configs": [
+    {
+      "script": "src/starnix/containers/alpine/build_container.sh"
+    }
+  ]
+}
