@@ -5,7 +5,7 @@
   "remote": "https://fuchsia.googlesource.com/fuchsia",
   "script_configs": [
     {
-      "script": "src/starnix/containers/alpine/build_container.sh"
+      "script": "scripts/docker/build_starnix_alpine_container.sh"
     }
   ]
 }
