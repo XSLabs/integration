@@ -9,6 +9,8 @@
       "fuchsia/global.ci-clang_toolchain.prod.core.arm64-release",
       "fuchsia/global.ci-clang_toolchain.prod.core.x64-debug",
       "fuchsia/global.ci-clang_toolchain.prod.core.x64-release",
+      "fuchsia/global.ci-clang_toolchain.prod.minimal.riscv64-debug",
+      "fuchsia/global.ci-clang_toolchain.prod.minimal.riscv64-release",
       "pigweed/pigweed.toolchain-toolchain-prod-pigweed-linux",
       "pigweed-internal/toolchain-prod-linux-cd75839490",
       "pigweed-internal/toolchain-prod-linux-9e3f223050"
