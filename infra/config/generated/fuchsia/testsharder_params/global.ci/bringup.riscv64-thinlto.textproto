@@ -14,3 +14,4 @@ product_bundle_name: "bringup_with_tests.riscv64"
 shard_timeout {}
 pool: "fuchsia.tests"
 use_tcg: true
+experiments: "use_ffx_repository:50"

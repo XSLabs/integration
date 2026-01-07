@@ -14,4 +14,5 @@ per_shard_package_repos: true
 product_bundle_name: "minimal.x64"
 shard_timeout {}
 pool: "fuchsia.tests"
+experiments: "use_ffx_repository:50"
 zircon_args: "kernel.x86.disable_spec_mitigations=true"
