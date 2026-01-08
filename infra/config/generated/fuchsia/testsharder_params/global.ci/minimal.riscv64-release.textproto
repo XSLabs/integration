@@ -17,4 +17,3 @@ product_bundle_name: "minimal.riscv64"
 shard_timeout {}
 pool: "fuchsia.tests"
 use_tcg: true
-experiments: "use_ffx_repository:50"

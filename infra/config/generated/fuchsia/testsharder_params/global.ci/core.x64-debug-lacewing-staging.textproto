@@ -16,4 +16,3 @@ product_bundle_name: "core.x64"
 shard_timeout {}
 pool: "fuchsia.tests"
 experiments: "use_ffx_monitor"
-experiments: "use_ffx_repository:50"

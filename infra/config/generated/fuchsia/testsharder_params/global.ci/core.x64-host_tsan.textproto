@@ -18,4 +18,3 @@ shard_timeout {
   seconds: 2400
 }
 pool: "fuchsia.tests"
-experiments: "use_ffx_repository:50"

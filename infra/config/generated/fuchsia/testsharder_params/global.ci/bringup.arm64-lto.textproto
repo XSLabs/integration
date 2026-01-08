@@ -12,4 +12,3 @@ image_deps: true
 product_bundle_name: "bringup_with_tests.arm64"
 shard_timeout {}
 pool: "fuchsia.tests"
-experiments: "use_ffx_repository:50"
