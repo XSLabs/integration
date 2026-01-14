@@ -6,6 +6,7 @@
   "recipe": "fuchsia/fuchsia",
   "run_ctf_fidl_coverage": true,
   "skip_building_fuchsia_on_cq_retry": true,
+  "skip_test_shards_on_cq_retry": true,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
