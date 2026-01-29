@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <packages>
+    <!-- Versioned CTF release. See ctf_generate_manifest.py for details. -->
+    <package name="fuchsia/cts/${platform}"
+             path="prebuilt/ctf/f30/{{.OS}}-{{.Arch}}"
+             platforms="linux-amd64"
+             version="git_revision:c34b82c01a6014db1f689faece27fc4e66f58157" />
+    <package name="fuchsia/sdk/core/${platform}"
+             path="prebuilt/ctf/f30/{{.OS}}-{{.Arch}}/sdk"
+             platforms="linux-amd64"
+             attributes="ctf-host-tools"
+             version="f30" />
+    <package name="fuchsia/development/product_bundles/v2"
+             path="prebuilt/ctf/f30/{{.OS}}-{{.Arch}}/product_bundles"
+             platforms="linux-amd64"
+             attributes="ctf-host-tools"
+             version="f30" />
+  </packages>
+</manifest>
