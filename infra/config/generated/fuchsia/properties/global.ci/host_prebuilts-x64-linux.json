@@ -53,6 +53,10 @@
       "name": "futility"
     },
     {
+      "cipd_package": "fuchsia/tools/gndoc/${platform}",
+      "name": "gndoc"
+    },
+    {
       "cipd_package": "fuchsia/tools/json_validator/${platform}",
       "name": "json_validator"
     },
