@@ -5,7 +5,6 @@ compilation_mode: COMPILATION_MODE_DEBUG
 board: "boards/riscv64.gni"
 product: "products/workbench_eng.gni"
 gn_args: "build_should_trace_actions = true"
-gn_args: "optimize = \"debug\""
 gn_args: "truncate_build_info_commit_date = true"
 universe_packages: "//bundles/buildbot/workbench"
 host_labels: "//bundles/infra/build"
