@@ -15,6 +15,7 @@
         "name": "fuchsia"
       }
     ],
+    "self_test_builder": "fuchsia/try/bringup.x64-drivers-build_only",
     "use_buildbucket": true
   },
   "remote": "https://fuchsia.googlesource.com/infra/recipes"
