@@ -1,5 +1,5 @@
 {
-  "fallback_ref": "magma-dev",
+  "fallback_ref": "main",
   "no_python2": true,
   "recipe": "run_script",
   "remote": "https://fuchsia.googlesource.com/third_party/mesa",
