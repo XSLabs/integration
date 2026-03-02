@@ -8,6 +8,6 @@
             manifest="manifests/platform"
             root=""
             remote="https://fuchsia.googlesource.com/fuchsia"
-            revision="d7b39a0341039bb499972897aa5ea57ed15ed90d"/>
+            revision="e9bf6af6549710ea7c29667565d0c215473f819d"/>
   </imports>
 </manifest>
