@@ -11,6 +11,7 @@
   "no_python2": true,
   "recipe": "contrib/clang_trigger",
   "repo": "https://llvm.googlesource.com/llvm-project",
+  "start_time_delta_days": 14,
   "timeout_secs": 21600,
   "triggers": [
     "clang22-prod-trigger"
