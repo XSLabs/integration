@@ -4,7 +4,7 @@
     <project name="cobalt"
              path="third_party/cobalt"
              remote="https://fuchsia.googlesource.com/cobalt"
-             revision="9c598d9fd1e5fc3bea86406170514388073785ab"
+             revision="0db15e5ee2015f58854431776d4615b76b9cd7c7"
              gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="cobalt-registry"
              path="third_party/cobalt_config"
