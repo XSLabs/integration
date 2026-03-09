@@ -34,14 +34,11 @@
       },
       "max_attempts": 1,
       "max_attempts_per_test": 3,
-      "pool": "fuchsia.tests",
       "swarming_expiration_timeout_secs": 18000,
       "swarming_grace_period_secs": 30,
       "swarming_io_timeout_secs": 360,
-      "targets_serial": true,
       "test_on_gce": true,
-      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/bringup.x64-gce.textproto",
-      "use_cas_for_images": true
+      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/bringup.x64-gce.textproto"
     }
   }
 }

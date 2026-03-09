@@ -14,4 +14,12 @@ pave: true
 per_shard_package_repos: true
 product_bundle_name: "core_with_minfs.x64"
 shard_timeout {}
+disabled_device_types: "Astro"
+disabled_device_types: "Intel NUC Kit NUC11TNHv5"
+disabled_device_types: "Intel NUC Kit NUC7i5DNHE"
+disabled_device_types: "Khadas Vim2 Max"
+disabled_device_types: "Luis"
+disabled_device_types: "Nelson"
+disabled_device_types: "Sherlock"
+disabled_device_types: "Vim3"
 pool: "fuchsia.tests"
