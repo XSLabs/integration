@@ -1,7 +1,4 @@
 {
-  "$fuchsia/autocorrelator": {
-    "ci_bucket": "global.ci"
-  },
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
   "skip_building_fuchsia_on_cq_retry": true,
