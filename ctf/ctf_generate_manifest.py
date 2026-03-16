@@ -11,7 +11,6 @@ import re
 import subprocess
 import sys
 import tempfile
-from typing import Dict, List, Set
 
 SCRIPT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 FUCHSIA_CTS_PACKAGE = "fuchsia/cts/linux-amd64"
@@ -35,12 +34,12 @@ def main(args: argparse.Namespace) -> int:
         and f_release_regex.match(f)
     ]
 
-    deleted_files: Set[str] = set()
-    added_files: Set[str] = set()
-    populated_files: Set[str] = set()
-    skipped_files: Set[str] = set()
+    deleted_files: set[str] = set()
+    added_files: set[str] = set()
+    populated_files: set[str] = set()
+    skipped_files: set[str] = set()
 
-    expected_file_contents: Dict[str, str] = {
+    expected_file_contents: dict[str, str] = {
         api_level: format_ctf_template(api_level, git_revision)
         for api_level, git_revision in level_mapping.items()
     }
@@ -108,11 +107,11 @@ def main(args: argparse.Namespace) -> int:
     return 0
 
 
-def get_supported_api_levels() -> Set[str]:
+def get_supported_api_levels() -> set[str]:
     """Return a set of supported API levels, as listed in version_history.json
 
     Returns:
-        Set[str]: Versions that are supported. For example, {"f15", "f16"}.
+        set[str]: Versions that are supported. For example, {"f15", "f16"}.
     """
     version_path = os.path.join(
         SCRIPT_DIRECTORY,
@@ -127,7 +126,7 @@ def get_supported_api_levels() -> Set[str]:
         version_contents = json.load(f)
 
     # Get the name of each API level where its status is "supported"
-    version_data: Dict[str, Dict[str, str]] = version_contents["data"][
+    version_data: dict[str, dict[str, str]] = version_contents["data"][
         "api_levels"
     ]
     return {
@@ -137,7 +136,7 @@ def get_supported_api_levels() -> Set[str]:
     }
 
 
-def get_git_revisions_from_cipd(versions: List[str]) -> Dict[str, str]:
+def get_git_revisions_from_cipd(versions: list[str]) -> dict[str, str]:
     """Annotate versions with their corresponding git_revision tag from CIPD.
 
     This method uses CIPD to find the associated git_revision for a CIPD
@@ -148,10 +147,10 @@ def get_git_revisions_from_cipd(versions: List[str]) -> Dict[str, str]:
         keys (abc.Iterable[str]): CIPD package versions to search for.
 
     Returns:
-        Dict[str, str]: Mapping from version to its git_revision,
+        dict[str, str]: Mapping from version to its git_revision,
             only if it exists.
     """
-    ret: Dict[str, str] = dict()
+    ret: dict[str, str] = dict()
 
     for key in versions:
         with tempfile.TemporaryDirectory() as td:
@@ -230,11 +229,11 @@ _IMPORTER_TEMPLATE: str = r"""<?xml version="1.0" encoding="UTF-8"?>
 """
 
 
-def format_import_file(files: List[str]) -> str:
+def format_import_file(files: list[str]) -> str:
     """Format a complete manifest import file.
 
     Args:
-        files (List[str]): Files to import in the manifest.
+        files (list[str]): Files to import in the manifest.
 
     Returns:
         str: Formatted manifest file, ready to write to disk.
@@ -245,11 +244,11 @@ def format_import_file(files: List[str]) -> str:
 _IMPORT_TEMPLATE: str = r'<localimport file="{FILE}"/>'
 
 
-def format_import_list(files: List[str]) -> str:
+def format_import_list(files: list[str]) -> str:
     """Format the localimport section for a manifest.
 
     Args:
-        files (List[str]): Files to include in the import list.
+        files (list[str]): Files to include in the import list.
 
     Returns:
         _type_: Formatted string containing imports to include in a manifest.
@@ -277,19 +276,19 @@ def print_error(reason: str) -> None:
 
 def print_outcome(
     dry_run: bool,
-    deleted: List[str],
-    added: List[str],
-    populated: List[str],
-    skipped: List[str],
+    deleted: list[str],
+    added: list[str],
+    populated: list[str],
+    skipped: list[str],
 ):
     """Print the outcome of the operation as a JSON object.
 
     Args:
         dry_run (bool): True if this tool was executed with --dry-run.
-        deleted (List[str]): List of files deleted.
-        added (List[str]): List of files added.
-        populated (List[str]): List of files populated (existed but have new data).
-        skipped (List[str]): List of unchanged files.
+        deleted (list[str]): List of files deleted.
+        added (list[str]): List of files added.
+        populated (list[str]): List of files populated (existed but have new data).
+        skipped (list[str]): List of unchanged files.
     """
     did_work = len(deleted + added + populated) != 0
     status: str
