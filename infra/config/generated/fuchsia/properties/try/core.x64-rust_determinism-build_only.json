@@ -18,7 +18,7 @@
     "build": {
       "enable_sandboxing": true,
       "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/try/core.x64-rust_determinism-build_only.textproto",
-      "timeout_secs": 7200
+      "timeout_secs": 8100
     },
     "checkout": {
       "manifest": "flower",
