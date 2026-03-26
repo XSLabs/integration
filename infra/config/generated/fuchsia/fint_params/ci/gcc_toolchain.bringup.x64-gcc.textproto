@@ -20,3 +20,4 @@ default_test_durations_file: "prebuilt/infra/test_durations/fuchsia/default.json
 include_default_ninja_target: true
 ninja_args: "-k0"
 build_event_service: "resultstore_infra"
+build_event_service_ninja: "resultstore_infra"
