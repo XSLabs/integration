@@ -4,7 +4,7 @@
 compilation_mode: COMPILATION_MODE_RELEASE
 board: "boards/riscv64.gni"
 product: "products/minimal.gni"
-universe_packages: "//bundles/buildbot/minimal"
+universe_packages: "//bundles/docs_roller"
 target_arch: RISCV64
 include_images: true
 include_prebuilt_binary_manifests: true
