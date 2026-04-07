@@ -9,7 +9,7 @@
     <project name="cobalt-registry"
              path="third_party/cobalt_config"
              remote="https://fuchsia.googlesource.com/cobalt-registry"
-             revision="41bd1ef678c36c20cee64a1dec90e9811e2eaddb"
+             revision="0ea3c23de7ed5ea5061ddee474e4bc470a38d57f"
              gerrithost="https://fuchsia-review.googlesource.com"/>
   </projects>
 </manifest>
