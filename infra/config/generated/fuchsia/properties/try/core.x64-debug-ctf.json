@@ -3,6 +3,7 @@
     "ci_bucket": "global.ci"
   },
   "no_python2": true,
+  "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
   "run_ctf_fidl_coverage": true,
   "skip_building_fuchsia_on_cq_retry": true,

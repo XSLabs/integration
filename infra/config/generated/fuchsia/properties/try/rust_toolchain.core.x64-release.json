@@ -5,6 +5,7 @@
     }
   },
   "no_python2": true,
+  "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
   "skip_building_fuchsia_on_cq_retry": true,
   "skip_test_shards_on_cq_retry": true,
