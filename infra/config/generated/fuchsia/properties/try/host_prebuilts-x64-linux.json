@@ -57,10 +57,6 @@
       "name": "gndoc"
     },
     {
-      "cipd_package": "fuchsia/tools/json_validator/${platform}",
-      "name": "json_validator"
-    },
-    {
       "cipd_package": "fuchsia/tools/ninjatrace/${platform}",
       "name": "ninjatrace"
     },
