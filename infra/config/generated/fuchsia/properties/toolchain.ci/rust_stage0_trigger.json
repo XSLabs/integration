@@ -1,4 +1,8 @@
 {
+  "next_stage_builders": [
+    "rust_stage0_trigger_prod_bootstrap"
+  ],
+  "next_stage_builders_bucket": "prod",
   "no_python2": true,
   "recipe": "contrib/rust_stage0_trigger",
   "remote": "https://rust.googlesource.com/rust",
