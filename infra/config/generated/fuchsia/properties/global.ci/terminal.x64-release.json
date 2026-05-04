@@ -20,7 +20,7 @@
       "catapult_dashboard_master": "fuchsia.global.ci",
       "default_service_account": "artifact-readers@fuchsia-infra.iam.gserviceaccount.com",
       "enable_sandboxing": true,
-      "max_attempts": 1,
+      "max_attempts": 2,
       "max_attempts_per_test": 1,
       "retry_task_on_test_failure": true,
       "swarming_expiration_timeout_secs": 18000,
