@@ -30,3 +30,4 @@ e2e_test_labels: "//bundles/buildbot/core:e2e_tests"
 link_rbe_enable: true
 bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
+build_event_service_ninja: "resultstore_infra"

@@ -26,3 +26,4 @@ ninja_args: "-k0"
 link_rbe_enable: true
 bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
+build_event_service_ninja: "resultstore_infra"
