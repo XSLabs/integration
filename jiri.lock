@@ -1,6 +1,11 @@
 [
     {
         "package": "fuchsia/cts/linux-amd64",
+        "version": "git_revision:0322600164fd1657e718c9a3b6337f74f1a78df7",
+        "instance_id": "gskgY_IdjP8C3A5ROIVXud8Di1W2FZGS-m_eh_wBYYQC"
+    },
+    {
+        "package": "fuchsia/cts/linux-amd64",
         "version": "git_revision:4892ad6db9d017b78612cec822752584bc593288",
         "instance_id": "nxLcT2uCNFET53qHSNZqwBPTTGlbsL6vdw9AqpPcfzIC"
     },
@@ -8,11 +13,6 @@
         "package": "fuchsia/cts/linux-amd64",
         "version": "git_revision:700fa56a09596f8ca813768e0374fe895f554ef1",
         "instance_id": "p-bPW9pAHPOcuWh6Qh1G0dHgtCf-D8BkFbz06YqaaYQC"
-    },
-    {
-        "package": "fuchsia/cts/linux-amd64",
-        "version": "git_revision:70dcc69f2e366fbed5bdd1922dc6822d27958518",
-        "instance_id": "EEhynq-BA18XJZ3PbnDiMKt-ADt5ath-_fAqjdEGNjUC"
     },
     {
         "package": "fuchsia/cts/linux-amd64",
