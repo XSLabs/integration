@@ -6,12 +6,8 @@
   "no_python2": true,
   "recipe": "contrib/rust_stage0_trigger",
   "remote": "https://rust.googlesource.com/rust",
+  "triggering_mode": "REGULAR_MODE_STOP_IF_ALREADY_IN_CIPD",
   "triggers": [
-    "rust-stage0-linux-x64",
-    "rust-stage0-linux-arm64",
-    "rust-stage0-mac-x64",
-    "rust-stage0-mac-arm64",
-    "rust-stage0-windows-x64",
     "rust-stage0-bootstrap-linux-x64"
   ]
 }
