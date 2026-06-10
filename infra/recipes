@@ -11,6 +11,6 @@
              path="infra/recipes"
              remote="https://fuchsia.googlesource.com/infra/recipes"
              gerrithost="https://fuchsia-review.googlesource.com"
-             revision="9a8eca0f2feacb51a2356cb90f84cf485640cc3c"/>
+             revision="13013f2e08ab34e5f32af2014bc2d5b9bf974720"/>
   </projects>
 </manifest>
