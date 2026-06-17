@@ -3,7 +3,7 @@
   "input_builder_bucket": "toolchain.ci",
   "input_builders": [
     "clang-linux-x64",
-    "clang-mac-x64",
+    "clang-mac-arm64",
     "clang-windows-x64"
   ],
   "no_python2": true,
