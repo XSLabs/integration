@@ -5,14 +5,12 @@
   "input_llvm_builders": [
     "clang-linux-x64",
     "clang-linux-arm64",
-    "clang-mac-x64",
     "clang-mac-arm64",
     "clang-windows-x64"
   ],
   "input_rust_builder_bucket": "toolchain.ci",
   "input_rust_builders": [
     "rust-linux-x64",
-    "rust-mac-x64",
     "rust-windows-x64",
     "rust-linux-arm64",
     "rust-mac-arm64"
