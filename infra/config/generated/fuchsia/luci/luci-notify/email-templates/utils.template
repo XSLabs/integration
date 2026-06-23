@@ -8,9 +8,61 @@ This file contains useful common templates that can be imported by other templat
 {{- else if eq . 36 -}} {{/* INFRA FAILURE */}}
 #850093
 {{- else if eq . 68 -}} {{/* CANCELED */}}
-#c400aa
+#0288d1
 {{- else -}}
 #000000
+{{- end -}}
+{{- end -}}
+
+{{- define "status_to_bg_color" -}}
+{{- if eq . 12 -}} {{/* SUCCESS */}}
+#e8f5e9
+{{- else if eq . 20 -}} {{/* FAILURE */}}
+#fce8e6
+{{- else if eq . 36 -}} {{/* INFRA FAILURE */}}
+#f3e5f5
+{{- else if eq . 68 -}} {{/* CANCELED */}}
+#e1f5fe
+{{- else -}}
+#f8f9fa
+{{- end -}}
+{{- end -}}
+
+{{- define "status_to_border_color" -}}
+{{- if eq . 12 -}} {{/* SUCCESS */}}
+#049300
+{{- else if eq . 20 -}} {{/* FAILURE */}}
+#b50000
+{{- else if eq . 36 -}} {{/* INFRA FAILURE */}}
+#850093
+{{- else if eq . 68 -}} {{/* CANCELED */}}
+#0288d1
+{{- else -}}
+#dadce0
+{{- end -}}
+{{- end -}}
+
+{{- define "builder_history_link" -}}
+<a href="https://ci.chromium.org/p/{{ .Build.Builder.Project }}/builders/{{ .Build.Builder.Bucket }}/{{ .Build.Builder.Builder }}" style="color: #1a73e8; text-decoration: none;">{{ .Build.Builder.Bucket }}/{{ .Build.Builder.Builder }}</a>
+{{- end -}}
+
+{{- define "status_summary_sentence" -}}
+{{- if eq .Build.Status 12 -}} {{/* SUCCESS */}}
+  {{- if eq .OldStatus 12 -}}
+  {{ template "builder_history_link" . }} is <b>still passing</b>.
+  {{- else if ne .OldStatus 0 -}}
+  {{ template "builder_history_link" . }} went back to <b>passing</b>.
+  {{- else -}}
+  Build for {{ template "builder_history_link" . }} <b>succeeded</b>.
+  {{- end -}}
+{{- else -}} {{/* NON-SUCCESS (FAILURE, INFRA FAILURE, CANCELED) */}}
+  {{- if eq .OldStatus 12 -}}
+  {{ template "builder_history_link" . }} is <b>newly failing</b>.
+  {{- else if ne .OldStatus 0 -}}
+  {{ template "builder_history_link" . }} is <b>still failing</b>.
+  {{- else -}}
+  Build for {{ template "builder_history_link" . }} <b>failed</b>.
+  {{- end -}}
 {{- end -}}
 {{- end -}}
 
@@ -26,38 +78,49 @@ This file contains useful common templates that can be imported by other templat
   comments (<!-- ... -->) during template parsing.
 */}}
 {{ "<!-- GMR-pragma:keep-html-body -->" | markdown }}
-<table style="border: 0">
-  <tr>
-    <td style="text-align: right">Status:</td>
-    <td><span style="color: #ffffff; background-color: {{- template "status_to_color" .Build.Status -}}; font-weight: bold">
+<div style="margin-bottom: 16px;">
+  <div style="font-size: 16px; margin-bottom: 12px;">
+    {{- template "status_summary_sentence" . -}}
+  </div>
+  <table style="border: 0;">
+    <tr>
+      <td style="text-align: right; width: 120px; font-weight: bold; padding: 4px 8px 4px 0;">Status:</td>
+      <td style="padding: 4px 0;"><span style="color: #ffffff; background-color: {{- template "status_to_color" .Build.Status -}}; font-weight: bold; padding: 3px 8px; border-radius: 3px; display: inline-block;">
 {{ .Build.Status }}
 </span></td>
-  </tr>
+    </tr>
 
-  {{ if ne .OldStatus 0 -}}
-  <tr>
-    <td style="text-align: right">Previous status:</td>
-    <td>{{ .OldStatus }}</td>
-  </tr>
+    {{ if ne .OldStatus 0 -}}
+    <tr>
+      <td style="text-align: right; font-weight: bold; padding: 4px 8px 4px 0;">Previous status:</td>
+      <td style="padding: 4px 0;"><span style="color: {{- template "status_to_border_color" .OldStatus -}}; background-color: {{- template "status_to_bg_color" .OldStatus -}}; font-weight: bold; padding: 2px 6px; border-radius: 3px; display: inline-block;">
+{{ .OldStatus }}
+</span></td>
+    </tr>
+    {{ end -}}
+
+    <tr>
+      <td style="text-align: right; font-weight: bold; padding: 4px 8px 4px 0;">Completed at:</td>
+      <td style="padding: 4px 0;">{{with .Build.EndTime | time}}{{.Format "2006-01-02 15:04:05"}}{{end}}</td>
+    </tr>
+
+    <tr>
+      <td style="text-align: center; padding-top: 16px;" colspan="2">
+        <a href="https://ci.chromium.org/b/{{ .Build.Id }}" style="display: inline-block; padding: 10px 20px; color: #ffffff; background-color: #1a73e8; font-weight: bold; text-decoration: none; border-radius: 4px;">Build Results Page</a>
+      </td>
+    </tr>
+  </table>
+
+  {{ if .Build.SummaryMarkdown -}}
+  <div style="margin-top: 16px;">
+    <div style="font-weight: bold; margin-bottom: 6px;">Summary:</div>
+    <div style="padding: 12px; background-color: {{- template "status_to_bg_color" .Build.Status -}}; border: 1px solid {{- template "status_to_border_color" .Build.Status -}}; border-left: 6px solid {{- template "status_to_border_color" .Build.Status -}}; border-radius: 4px; font-family: monospace; white-space: pre-wrap; word-break: break-word;">{{ .Build.SummaryMarkdown }}</div>
+  </div>
   {{ end -}}
 
-  <tr>
-    <td style="text-align: right">Completed at:</td>
-    <td>{{ .Build.EndTime | time }}</td>
-  </tr>
-  {{ with .Build.GetInput.GetGitilesCommit -}}
-  <tr>
-    <td style="text-align: right">Triggered by:</td>
-    <td><a href="https://{{ .Host }}/{{ .Project }}/+/{{ .Id }}">{{ .Project }}/{{ .Id }}</a></td>
-  </tr>
-  {{ end -}}
-
-  <tr>
-    <td style="text-align: center" colspan="2"><a href="https://ci.chromium.org/b/{{ .Build.Id }}">Build Results Page</a></td>
-  </tr>
-</table>
+  <div style="font-size: 12px; color: #5f6368; margin-top: 24px; padding-top: 12px; border-top: 1px solid #dadce0;">
+    This alert was sent by LUCI Notify. Alerts are configured in the <a href="https://turquoise-internal.googlesource.com/integration/+/HEAD/infra/config" style="color: #1a73e8; text-decoration: none;">Fuchsia infra configs</a>.
+  </div>
+</div>
 {{ end -}}
 
-{{define "report_flake" -}}
-<a href="https://bugs.fuchsia.dev/p/fuchsia/issues/entry?comment=Example%20failure%3A%20https%3A%2F%2Fci.chromium.org%2Fb%2F{{ .Build.Id }}%0A%0AFor%20more%20examples%2C%20see%20https%3A%2F%2Fgoto.google.com%2Ffuchsia-test-flakes%0A%0AREAD%20AND%20DELETE%20THESE%20INSTRUCTIONS%3A%20%0APlease%20paste%20the%20relevant%20logs%20here.%0A%0A&labels=%2CPri-2%2CType-Bug&components=Flake&labels=Restrict-View-Google&summary=%3CREPLACE%20ME%20WITH%20TEST%20NAME%3E%20is%20flaky">Report test flake.</a>
-{{end -}}
