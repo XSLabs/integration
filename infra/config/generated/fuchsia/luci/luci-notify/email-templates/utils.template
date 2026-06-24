@@ -68,16 +68,18 @@ This file contains useful common templates that can be imported by other templat
 
 {{ define "summary" -}}
 {{/*
-  This "GMR-pragma" HTML comment is required by Google's alert mail dispatcher
+  A "GMR-pragma" HTML comment is required by Google's alert mail dispatcher
   (GMR) to preserve HTML formatting when forwarding emails from LUCI Notify to
-  oncall aliases. Without it, GMR defaults to plain text when ingesting
+  on-call aliases. Without it, GMR defaults to plain text when ingesting
   multipart notification emails and strips hyperlinks.
 
-  It must be rendered via `| markdown` (which returns a typed template.HTML)
-  because Go's html/template engine automatically strips standard HTML
-  comments (<!-- ... -->) during template parsing.
+  However, LUCI Notify strips HTML comments during template parsing. As a
+  workaround, we embed the pragma inside a meta tag attribute value. This hack
+  works because GMR does not require an actual HTML comment node - it simply
+  performs a raw substring check on the email body contents:
+  http://google3/borg/monitoring/alert/gmr_dispatcher/mail_listener_context.cc;l=184-188;rcl=934675608
 */}}
-{{ "<!-- GMR-pragma:keep-html-body -->" | markdown }}
+<meta name="gmr-pragma" content="<!-- GMR-pragma:keep-html-body -->">
 <div style="margin-bottom: 16px;">
   <div style="font-size: 16px; margin-bottom: 12px;">
     {{- template "status_summary_sentence" . -}}
