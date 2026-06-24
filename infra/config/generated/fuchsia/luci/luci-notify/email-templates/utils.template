@@ -87,23 +87,27 @@ This file contains useful common templates that can be imported by other templat
   <table style="border: 0;">
     <tr>
       <td style="text-align: right; width: 120px; font-weight: bold; padding: 4px 8px 4px 0;">Status:</td>
-      <td style="padding: 4px 0;"><span style="color: #ffffff; background-color: {{- template "status_to_color" .Build.Status -}}; font-weight: bold; padding: 3px 8px; border-radius: 3px; display: inline-block;">
-{{ .Build.Status }}
-</span></td>
+      <td style="padding: 4px 0;">
+        <span style="color: #ffffff; background-color: {{- template "status_to_color" .Build.Status -}}; font-weight: bold; padding: 3px 8px; border-radius: 3px; display: inline-block;">
+          {{ .Build.Status }}
+        </span>
+      </td>
     </tr>
 
     {{ if ne .OldStatus 0 -}}
     <tr>
       <td style="text-align: right; font-weight: bold; padding: 4px 8px 4px 0;">Previous status:</td>
-      <td style="padding: 4px 0;"><span style="color: {{- template "status_to_border_color" .OldStatus -}}; background-color: {{- template "status_to_bg_color" .OldStatus -}}; font-weight: bold; padding: 2px 6px; border-radius: 3px; display: inline-block;">
-{{ .OldStatus }}
-</span></td>
+      <td style="padding: 4px 0;">
+        <span style="color: {{- template "status_to_border_color" .OldStatus -}}; background-color: {{- template "status_to_bg_color" .OldStatus -}}; font-weight: bold; padding: 2px 6px; border-radius: 3px; display: inline-block;">
+          {{ .OldStatus }}
+        </span>
+      </td>
     </tr>
     {{ end -}}
 
     <tr>
       <td style="text-align: right; font-weight: bold; padding: 4px 8px 4px 0;">Completed at:</td>
-      <td style="padding: 4px 0;">{{with .Build.EndTime | time}}{{.Format "2006-01-02 15:04:05"}}{{end}}</td>
+      <td style="padding: 4px 0;">{{with .Build.EndTime | time}}{{.Format "2006-01-02 15:04:05 MST"}}{{end}}</td>
     </tr>
 
     <tr>
@@ -113,15 +117,20 @@ This file contains useful common templates that can be imported by other templat
     </tr>
   </table>
 
-  {{ if .Build.SummaryMarkdown -}}
   <div style="margin-top: 16px;">
     <div style="font-weight: bold; margin-bottom: 6px;">Summary:</div>
-    <div style="padding: 12px; background-color: {{- template "status_to_bg_color" .Build.Status -}}; border: 1px solid {{- template "status_to_border_color" .Build.Status -}}; border-left: 6px solid {{- template "status_to_border_color" .Build.Status -}}; border-radius: 4px; font-family: monospace; white-space: pre-wrap; word-break: break-word;">{{ .Build.SummaryMarkdown }}</div>
+    <div style="padding: 12px; background-color: {{- template "status_to_bg_color" .Build.Status -}}; border: 1px solid {{- template "status_to_border_color" .Build.Status -}}; border-left: 6px solid {{- template "status_to_border_color" .Build.Status -}}; border-radius: 4px; word-break: break-word;">
+      {{- if .Build.SummaryMarkdown -}}
+        {{ .Build.SummaryMarkdown | markdown }}
+      {{- else -}}
+        <span style="color: #5f6368;">No Summary.</span>
+      {{- end -}}
+    </div>
   </div>
-  {{ end -}}
 
   <div style="font-size: 12px; color: #5f6368; margin-top: 24px; padding-top: 12px; border-top: 1px solid #dadce0;">
-    This alert was sent by LUCI Notify. Alerts are configured in the <a href="https://turquoise-internal.googlesource.com/integration/+/HEAD/infra/config" style="color: #1a73e8; text-decoration: none;">Fuchsia infra configs</a>.
+    This alert was sent by LUCI Notify. Alerts are configured in the
+    <a href="https://turquoise-internal.googlesource.com/integration/+/HEAD/infra/config" style="color: #1a73e8; text-decoration: none;">Fuchsia infra configs</a>.
   </div>
 </div>
 {{ end -}}
