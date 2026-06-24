@@ -1,3 +1,9 @@
+{{/*
+  Appending the build end date (YYYY-MM-DD) to the email subject ensures Gmail
+  groups alert emails into a separate thread for each day. This allows a
+  recipient engineer to mute a recurring failure thread for a day without
+  ignoring it indefinitely.
+*/}}
 [Builder Status] {{.Build.Builder.Builder}} {{with .Build.EndTime | time}}{{.Format "2006-01-02"}}{{end}}
 
 {{ template "summary" . }}
