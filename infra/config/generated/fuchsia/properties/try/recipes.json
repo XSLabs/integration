@@ -10,7 +10,7 @@
           "https://fuchsia.googlesource.com/fuchsia",
           "https://fuchsia.googlesource.com/infra/infra",
           "https://fuchsia.googlesource.com/infra/recipes",
-          "https://fuchsia.googlesource.com/drivers/wlan/intel/iwlwifi"
+          "https://fuchsia.googlesource.com/boards/emac"
         ],
         "name": "fuchsia"
       }
