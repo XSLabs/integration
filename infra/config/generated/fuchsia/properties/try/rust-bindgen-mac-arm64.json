@@ -1,0 +1,7 @@
+{
+  "cipd_package": "fuchsia/third_party/rust_bindgen/${platform}",
+  "dry_run": true,
+  "no_python2": true,
+  "recipe": "contrib/bindgen",
+  "remote": "https://fuchsia.googlesource.com/third_party/github.com/rust-lang/rust-bindgen"
+}
