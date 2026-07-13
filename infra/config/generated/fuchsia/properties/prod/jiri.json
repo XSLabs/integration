@@ -1,5 +1,6 @@
 {
   "no_python2": true,
+  "publish": true,
   "recipe": "jiri",
   "remote": "https://fuchsia.googlesource.com/jiri"
 }
