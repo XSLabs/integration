@@ -13,7 +13,6 @@ target_arch: X64
 variants: "asan-ubsan"
 variants: "host_asan-ubsan"
 pave: true
-include_images: true
 include_prebuilt_binary_manifests: true
 cxx_rbe_enable: true
 incremental: true

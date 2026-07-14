@@ -6,5 +6,4 @@ board: "boards/arm64.gni"
 product: "products/core_size_limits.gni"
 host_labels: "//bundles/infra/build"
 target_arch: ARM64
-include_images: true
 include_default_ninja_target: true
