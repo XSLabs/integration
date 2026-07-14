@@ -33,6 +33,7 @@
   },
   "lto_mode": "FULL",
   "no_python2": true,
-  "platform": "linux-arm64",
-  "recipe": "contrib/clang_toolchain"
+  "platform": "linux-riscv64",
+  "recipe": "contrib/clang_toolchain",
+  "upload_package": true
 }
