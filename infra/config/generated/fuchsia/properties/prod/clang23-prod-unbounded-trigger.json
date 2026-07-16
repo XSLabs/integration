@@ -2,11 +2,11 @@
   "bucket": "prod",
   "input_builder_bucket": "toolchain.ci",
   "input_builders": [
-    "clang22-linux-arm64",
-    "clang22-linux-x64",
-    "clang22-mac-arm64",
-    "clang22-mac-x64",
-    "clang22-windows-x64"
+    "clang23-linux-arm64",
+    "clang23-linux-x64",
+    "clang23-mac-arm64",
+    "clang23-mac-x64",
+    "clang23-windows-x64"
   ],
   "no_python2": true,
   "recipe": "contrib/clang_trigger",
@@ -14,6 +14,6 @@
   "start_time_delta_days": 14,
   "timeout_secs": 21600,
   "triggers": [
-    "clang22-prod-trigger"
+    "clang23-prod-trigger"
   ]
 }
