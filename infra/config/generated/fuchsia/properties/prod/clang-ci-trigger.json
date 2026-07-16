@@ -1,9 +1,0 @@
-{
-  "bucket": "toolchain.ci",
-  "builders": [
-    "clang-linux-riscv64"
-  ],
-  "no_python2": true,
-  "recipe": "contrib/toolchain_trigger",
-  "timeout": 7200
-}
