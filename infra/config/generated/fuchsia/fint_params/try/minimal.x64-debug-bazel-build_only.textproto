@@ -10,7 +10,6 @@ ninja_targets: "gen/build/bazel/examples/hello_world/hello_world"
 universe_packages: "//build/bazel/examples/hello_world"
 host_labels: "//bundles/infra/build"
 target_arch: X64
-pave: true
 include_prebuilt_binary_manifests: true
 rust_rbe_enable: true
 cxx_rbe_enable: true

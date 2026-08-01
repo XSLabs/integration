@@ -12,7 +12,6 @@ gn_args: "truncate_build_info_commit_date = true"
 universe_packages: "//bundles/buildbot/core"
 host_labels: "//bundles/infra/build"
 target_arch: X64
-pave: true
 include_prebuilt_binary_manifests: true
 include_default_ninja_target: true
 ninja_args: "-k0"

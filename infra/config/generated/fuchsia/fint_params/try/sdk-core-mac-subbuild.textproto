@@ -10,7 +10,6 @@ ninja_targets: ":developer_host_tools"
 ninja_targets: "sdk:final_fuchsia_idk"
 host_labels: "//bundles/infra/build"
 target_arch: X64
-pave: true
 include_prebuilt_binary_manifests: true
 build_event_service: "resultstore_infra"
 build_event_service_ninja: "resultstore_infra"

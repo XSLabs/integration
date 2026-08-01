@@ -11,7 +11,6 @@ universe_packages: "//bundles/buildbot/core"
 host_labels: "//bundles/infra/build"
 target_arch: ARM64
 variants: "lto"
-pave: true
 include_prebuilt_binary_manifests: true
 incremental: true
 include_default_ninja_target: true
