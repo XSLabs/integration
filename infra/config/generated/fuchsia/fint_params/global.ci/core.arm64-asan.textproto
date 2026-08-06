@@ -4,7 +4,6 @@
 compilation_mode: COMPILATION_MODE_DEBUG
 board: "boards/arm64.gni"
 product: "products/core.gni"
-gn_args: "allowed_test_device_types = [ \"AmpereAltraMax-M128-30\" ]"
 gn_args: "optimize = \"sanitizer\""
 gn_args: "truncate_build_info_commit_date = true"
 universe_packages: "//bundles/buildbot/core"
