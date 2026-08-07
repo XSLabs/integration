@@ -8,8 +8,6 @@ gn_args: "truncate_build_info_commit_date = true"
 ninja_targets: ":developer_host_tools"
 ninja_targets: "src/cobalt:tests"
 ninja_targets: "src/lib/cobalt:tests"
-universe_packages: "//src/cobalt:tests"
-universe_packages: "//src/lib/cobalt:tests"
 host_labels: "//bundles/infra/build"
 target_arch: X64
 include_prebuilt_binary_manifests: true
@@ -21,3 +19,5 @@ link_rbe_enable: true
 bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
 build_event_service_ninja: "resultstore_infra"
+target_labels: "//src/cobalt:tests"
+target_labels: "//src/lib/cobalt:tests"

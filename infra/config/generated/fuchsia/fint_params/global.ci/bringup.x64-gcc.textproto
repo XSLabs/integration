@@ -8,8 +8,6 @@ gn_args: "basic_env_names = [ \"aemu\", \"qemu\" ]"
 gn_args: "build_should_trace_actions = true"
 gn_args: "extra_kernel_test_images = [ \"eng.lk_debug_level_0\" ]"
 gn_args: "truncate_build_info_commit_date = true"
-universe_packages: "//bundles/buildbot/bringup"
-universe_packages: "//bundles/boot_tests"
 host_labels: "//bundles/infra/build"
 host_labels: "//bundles/infra/test"
 target_arch: X64
@@ -27,3 +25,5 @@ link_rbe_enable: true
 bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
 build_event_service_ninja: "resultstore_infra"
+target_labels: "//bundles/buildbot/bringup"
+target_labels: "//bundles/boot_tests"

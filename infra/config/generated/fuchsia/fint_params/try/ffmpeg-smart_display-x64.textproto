@@ -13,7 +13,6 @@ ninja_targets: "x64-novariant-shared/libffmpeg.so"
 ninja_targets: "x64-profile-shared/libffmpeg.so"
 ninja_targets: "x64-thinlto-shared/libffmpeg.so"
 ninja_targets: "x64-ubsan-shared/libffmpeg.so"
-universe_packages: "//third_party/ffmpeg:ffmpeg_variants"
 host_labels: "//bundles/infra/build"
 target_arch: X64
 variants: "asan"
@@ -23,3 +22,4 @@ variants: "profile"
 variants: "thinlto"
 variants: "ubsan"
 include_prebuilt_binary_manifests: true
+target_labels: "//third_party/ffmpeg:ffmpeg_variants"

@@ -6,7 +6,6 @@ board: "boards/x64.gni"
 product: "products/core.gni"
 gn_args: "build_should_trace_actions = true"
 gn_args: "truncate_build_info_commit_date = true"
-universe_packages: "//sdk/ctf:fyi"
 host_labels: "//bundles/infra/build"
 target_arch: X64
 include_prebuilt_binary_manifests: true
@@ -19,3 +18,4 @@ link_rbe_enable: true
 bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
 build_event_service_ninja: "resultstore_infra"
+target_labels: "//sdk/ctf:fyi"

@@ -7,7 +7,6 @@ product: "products/minimal.gni"
 gn_args: "build_should_trace_actions = true"
 gn_args: "truncate_build_info_commit_date = true"
 ninja_targets: "gen/build/bazel/examples/hello_world/hello_world"
-universe_packages: "//build/bazel/examples/hello_world"
 host_labels: "//bundles/infra/build"
 target_arch: X64
 include_prebuilt_binary_manifests: true
@@ -20,3 +19,4 @@ link_rbe_enable: true
 bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
 build_event_service_ninja: "resultstore_infra"
+target_labels: "//build/bazel/examples/hello_world"

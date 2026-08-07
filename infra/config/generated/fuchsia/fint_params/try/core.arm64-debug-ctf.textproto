@@ -6,8 +6,6 @@ board: "boards/arm64.gni"
 product: "products/core.gni"
 gn_args: "build_should_trace_actions = true"
 gn_args: "truncate_build_info_commit_date = true"
-universe_packages: "//sdk/ctf"
-universe_packages: "//sdk/ctf/release:tests"
 host_labels: "//bundles/infra/build"
 host_labels: "//bundles/infra/test"
 target_arch: ARM64
@@ -24,3 +22,5 @@ link_rbe_enable: true
 bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
 build_event_service_ninja: "resultstore_infra"
+target_labels: "//sdk/ctf"
+target_labels: "//sdk/ctf/release:tests"

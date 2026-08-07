@@ -4,9 +4,9 @@
 compilation_mode: COMPILATION_MODE_DEBUG
 board: "boards/x64.gni"
 product: "products/core.gni"
-universe_packages: "//bundles/buildbot/core"
 target_arch: X64
 include_prebuilt_binary_manifests: true
 cxx_rbe_enable: true
 include_default_ninja_target: true
 build_event_service: "resultstore_infra"
+target_labels: "//bundles/buildbot/core"
