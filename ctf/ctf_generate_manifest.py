@@ -153,6 +153,11 @@ def get_git_revisions_from_cipd(versions: list[str]) -> dict[str, str]:
     ret: dict[str, str] = dict()
 
     for key in versions:
+        # The Fuchsia CTS package is built off the compat/N branch
+        # instead of the fN release branch post f30.
+        version = key
+        if int(key.removeprefix("f")) > 30:
+            version = key.replace("f", "compat/")
         with tempfile.TemporaryDirectory() as td:
             # Run CIPD command to search for a matching version of the
             # Fuchsia CTS package.
@@ -162,7 +167,7 @@ def get_git_revisions_from_cipd(versions: list[str]) -> dict[str, str]:
                 "describe",
                 FUCHSIA_CTS_PACKAGE,
                 "-version",
-                key,
+                version,
                 "-json-output",
                 output_path,
             ]
@@ -191,16 +196,6 @@ _CTF_TEMPLATE: str = r"""<?xml version="1.0" encoding="UTF-8"?>
              path="prebuilt/ctf/{F_RELEASE}/{{.OS}}-{{.Arch}}"
              platforms="linux-amd64"
              version="git_revision:{REVISION}" />
-    <package name="fuchsia/sdk/core/${platform}"
-             path="prebuilt/ctf/{F_RELEASE}/{{.OS}}-{{.Arch}}/sdk"
-             platforms="linux-amd64"
-             attributes="ctf-host-tools"
-             version="{F_RELEASE}" />
-    <package name="fuchsia/development/product_bundles/v2"
-             path="prebuilt/ctf/{F_RELEASE}/{{.OS}}-{{.Arch}}/product_bundles"
-             platforms="linux-amd64"
-             attributes="ctf-host-tools"
-             version="{F_RELEASE}" />
   </packages>
 </manifest>"""
 
