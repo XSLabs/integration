@@ -23,7 +23,6 @@
       "attributes": [
         "clang-arm64"
       ],
-      "do_not_rebase_patch": true,
       "manifest": "flower",
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
