@@ -15,6 +15,7 @@
   "manifest": "flower",
   "no_python2": true,
   "package_archive_cipd_path": "fuchsia/third_party/vulkan-cts/${name}/${cpu}_${api_level}",
+  "publish": true,
   "recipe": "publish_build_artifacts",
   "remote": "https://fuchsia.googlesource.com/integration"
 }

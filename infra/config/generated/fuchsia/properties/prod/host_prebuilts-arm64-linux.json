@@ -8,9 +8,10 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
-  "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/global.ci/host_prebuilts-arm64-linux.textproto",
+  "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/prod/host_prebuilts-arm64-linux.textproto",
   "manifest": "flower",
   "no_python2": true,
+  "publish": true,
   "recipe": "publish_build_artifacts",
   "remote": "https://fuchsia.googlesource.com/integration",
   "tools": [
