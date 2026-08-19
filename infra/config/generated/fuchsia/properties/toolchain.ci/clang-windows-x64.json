@@ -5,11 +5,11 @@
   },
   "builders": {
     "linux-amd64": [
+      "fuchsia/global.ci-clang_toolchain.ci.bringup.riscv64-debug",
       "fuchsia/global.ci-clang_toolchain.ci.core.arm64-debug",
       "fuchsia/global.ci-clang_toolchain.ci.core.arm64-release",
       "fuchsia/global.ci-clang_toolchain.ci.core.x64-debug",
       "fuchsia/global.ci-clang_toolchain.ci.core.x64-release",
-      "fuchsia/global.ci-clang_toolchain.ci.minimal.riscv64-debug",
       "fuchsia/global.ci-clang_toolchain.ci.minimal.riscv64-release",
       "pigweed/pigweed.toolchain-toolchain-ci-pigweed-linux",
       "pigweed-internal/toolchain-ci-linux-cd75839490",
