@@ -29,6 +29,9 @@
     "mac-amd64": [
       "lldb-mac-x64"
     ],
+    "mac-arm64": [
+      "lldb-mac-arm64"
+    ],
     "windows-amd64": [
       "lldb-windows-x64"
     ]
