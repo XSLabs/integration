@@ -38,9 +38,7 @@
       ".ipp",
       ".inl",
       ".def",
-      ".c"
-    ],
-    "core.x64-coverage-rust-qemu_kvm": [
+      ".c",
       ".rs"
     ]
   },
