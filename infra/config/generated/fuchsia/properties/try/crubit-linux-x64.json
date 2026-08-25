@@ -1,0 +1,7 @@
+{
+  "cipd_package": "fuchsia/third_party/crubit/${platform}",
+  "dry_run": true,
+  "no_python2": true,
+  "recipe": "contrib/crubit",
+  "remote": "https://fuchsia.googlesource.com/third_party/github.com/google/crubit"
+}
