@@ -5,7 +5,7 @@ target_duration {
   seconds: 2400
 }
 max_shards_per_env: 30
-max_shard_size: 250
+max_shard_size: 125
 per_test_timeout {
   seconds: 600
 }
