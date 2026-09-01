@@ -1,4 +1,5 @@
 {
+  "cache_key": "d4acd9718d715ae9888631a559e3e2da328d62af0ed6eb8e34e1f8aaf44d7e26",
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
   "spec": {
@@ -26,5 +27,6 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/workbench_eng.x64-debug-lacewing-staging.textproto"
     }
   },
+  "use_shared_cache": true,
   "uses_subbuild": true
 }
