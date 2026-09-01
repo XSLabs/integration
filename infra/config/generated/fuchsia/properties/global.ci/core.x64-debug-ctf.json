@@ -1,4 +1,5 @@
 {
+  "cache_key": "5b0b629c01fe881801a5616d9dcd689774448fe93cf64a2a2686af37da2b07d7",
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
   "run_ctf_fidl_coverage": true,
@@ -28,5 +29,6 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/core.x64-debug-ctf.textproto"
     }
   },
+  "use_shared_cache": true,
   "uses_subbuild": true
 }

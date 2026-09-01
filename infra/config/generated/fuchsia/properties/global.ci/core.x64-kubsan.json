@@ -1,4 +1,5 @@
 {
+  "cache_key": "01d721be764805eecc682665793e367ac8737c7dfbd3ffcda905084f84712663",
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
   "spec": {
@@ -25,5 +26,6 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/core.x64-kubsan.textproto"
     }
   },
+  "use_shared_cache": true,
   "uses_subbuild": true
 }
