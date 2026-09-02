@@ -2,6 +2,7 @@
   "$fuchsia/autocorrelator": {
     "ci_bucket": "global.ci"
   },
+  "cache_key": "feef934c689a8b315a1ef7508ba04103544597ed785839a921114dd61556455a",
   "no_python2": true,
   "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
@@ -30,5 +31,6 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/try/minimal.riscv64-release.textproto"
     }
   },
+  "use_shared_cache": true,
   "uses_subbuild": true
 }
