@@ -8,8 +8,11 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
+  "cache_key": "823312f14b606de50341243d0489ba96ff3fda0d946b863dae22ad82470ab911",
   "no_python2": true,
   "recipe": "fuchsia/build",
+  "shared_cache_snapshots_per_disk": 1,
+  "shared_cache_source_disks": 1,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
@@ -33,5 +36,6 @@
       "swarming_grace_period_secs": 30,
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/core.x64-asan-test-pilot.textproto"
     }
-  }
+  },
+  "use_shared_cache": true
 }

@@ -8,6 +8,7 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
+  "cache_key": "967e8b587e96c47535ef36a0fffdad216a9d933e15c1e446a668e10d7468537b",
   "no_python2": true,
   "recipe": "fuchsia/build",
   "spec": {
@@ -32,5 +33,6 @@
       "swarming_grace_period_secs": 30,
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/bringup.riscv64-thinlto.textproto"
     }
-  }
+  },
+  "use_shared_cache": true
 }
