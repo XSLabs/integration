@@ -5,8 +5,7 @@ compilation_mode: COMPILATION_MODE_DEBUG
 product: "products/bringup.gni"
 gn_args: "clippy_cause_failure = false"
 ninja_targets: ":developer_host_tools"
-host_labels: "//build/bazel/host:bazel_root_host_tools.check-licenses"
-host_labels: "//bundles/tools/shac:shac_tools"
+host_labels: "//bundles/tools/shac"
 target_arch: X64
 include_prebuilt_binary_manifests: true
 cxx_rbe_enable: true
