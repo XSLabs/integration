@@ -1,9 +1,6 @@
 {
-  "cache_key": "23bf4933cc1c5c6da90e612f28b70cbf258a58b19b8db85566335e69d05ce1b3",
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
-  "shared_cache_snapshots_per_disk": 1,
-  "shared_cache_source_disks": 1,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
@@ -28,6 +25,5 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/bringup.x64-profile.textproto"
     }
   },
-  "use_shared_cache": true,
   "uses_subbuild": true
 }

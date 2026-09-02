@@ -8,11 +8,8 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
-  "cache_key": "9feef941439bf6019a2073ea39395b8ae6e4a8e85971322b18622f0a8dc5cf1e",
   "no_python2": true,
   "recipe": "fuchsia/build",
-  "shared_cache_snapshots_per_disk": 1,
-  "shared_cache_source_disks": 1,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
@@ -25,6 +22,5 @@
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
     }
-  },
-  "use_shared_cache": true
+  }
 }
