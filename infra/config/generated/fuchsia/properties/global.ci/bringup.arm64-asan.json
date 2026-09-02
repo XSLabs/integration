@@ -1,4 +1,5 @@
 {
+  "cache_key": "0edc0db4a229644f8c5da425f2c04963a15eb98038d8af9a40b17c62762b2746",
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
   "spec": {
@@ -24,5 +25,6 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/bringup.arm64-asan.textproto"
     }
   },
+  "use_shared_cache": true,
   "uses_subbuild": true
 }
