@@ -1,0 +1,14 @@
+{
+  "bucket": "prod",
+  "builders": [
+    "rust_stable-linux-x64",
+    "rust_stable-linux-arm64",
+    "rust_stable-mac-x64",
+    "rust_stable-mac-arm64",
+    "rust_stable-windows-x64"
+  ],
+  "enforce_output": true,
+  "no_python2": true,
+  "recipe": "contrib/toolchain_trigger",
+  "timeout": 21600
+}

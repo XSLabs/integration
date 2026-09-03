@@ -1,0 +1,12 @@
+{
+  "channel": "nightly",
+  "default_ref": "refs/heads/stable",
+  "llvm_assertions": true,
+  "no_python2": true,
+  "product": "rust",
+  "recipe": "rust_toolchain",
+  "remote": "https://rust.googlesource.com/rust",
+  "test_suites": [
+    "tests/ui"
+  ]
+}
