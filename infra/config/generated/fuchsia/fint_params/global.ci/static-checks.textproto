@@ -5,7 +5,7 @@ compilation_mode: COMPILATION_MODE_DEBUG
 product: "products/bringup.gni"
 gn_args: "clippy_cause_failure = false"
 ninja_targets: ":developer_host_tools"
-host_labels: "//bundles/tools/shac"
+host_labels: "//bundles/buildbot/static_checks"
 target_arch: X64
 include_prebuilt_binary_manifests: true
 cxx_rbe_enable: true
