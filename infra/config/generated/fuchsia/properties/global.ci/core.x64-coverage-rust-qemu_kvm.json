@@ -1,9 +1,9 @@
 {
-  "cache_key": "68dc1ec370231b8c03cab7c3a3ed489f11bef54f9083a8379c64f180db12a73f",
+  "cache_key": "01ed7e2133fc5fbd86a9b6b0291e7e216b1d371d6532991cc0033e89f5afd977",
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
-  "shared_cache_snapshots_per_disk": 1,
-  "shared_cache_source_disks": 1,
+  "shared_cache_snapshots_per_disk": 6,
+  "shared_cache_source_disks": 2,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
