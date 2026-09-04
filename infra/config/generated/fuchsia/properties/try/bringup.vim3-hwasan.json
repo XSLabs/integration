@@ -2,6 +2,7 @@
   "$fuchsia/autocorrelator": {
     "ci_bucket": "global.ci"
   },
+  "cache_key": "aef66fcaf4c60a391316cd85c80b2a116fad3684fff639ddacd301426d706379",
   "no_python2": true,
   "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
@@ -31,5 +32,6 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/try/bringup.vim3-hwasan.textproto"
     }
   },
+  "use_shared_cache": true,
   "uses_subbuild": true
 }

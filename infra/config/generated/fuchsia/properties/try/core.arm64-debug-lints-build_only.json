@@ -11,6 +11,7 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
+  "cache_key": "9652e24ec257284747056752360d0902b4e7423aeb25c992132399bf1b8b8916",
   "no_python2": true,
   "recipe": "fuchsia/build",
   "spec": {
@@ -25,5 +26,6 @@
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
     }
-  }
+  },
+  "use_shared_cache": true
 }

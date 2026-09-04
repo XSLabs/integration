@@ -1,4 +1,5 @@
 {
+  "cache_key": "f150a884c95568b9ed5eddb0d7d34932e8c7b9a86c032300625486e0a1766ac4",
   "no_python2": true,
   "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
@@ -28,5 +29,6 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/try/core.x64-release-minfs-no_hardware.textproto"
     }
   },
+  "use_shared_cache": true,
   "uses_subbuild": true
 }
