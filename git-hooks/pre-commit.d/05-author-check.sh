@@ -13,15 +13,3 @@ case "${EMAIL}" in
     ;;
 esac
 
-if [ -f ".git/hooks/unstage-submodules.sh" ]; then
-  .git/hooks/unstage-submodules.sh
-fi
-
-# Run a custom pre-commit hook if one exists.
-#
-# To perform additional pre-commit checks, create an executable file
-# 'pre-commit.dev' in the .git/hooks directory in your Fuchsia source checkout
-# and implement the checks there.
-if [ -f ".git/hooks/pre-commit.dev" ]; then
-  exec .git/hooks/pre-commit.dev
-fi
