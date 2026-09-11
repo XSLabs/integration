@@ -1,7 +1,0 @@
-{
-  "cipd_root": "fuchsia/tools",
-  "no_python2": true,
-  "publish": true,
-  "recipe": "tools",
-  "remote": "https://fuchsia.googlesource.com/tools"
-}
