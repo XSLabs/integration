@@ -8,7 +8,7 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
-  "cache_key": "823312f14b606de50341243d0489ba96ff3fda0d946b863dae22ad82470ab911",
+  "cache_key": "6f6cadec2f6b113b56d555e7dfc0f780983ea7455a80c44342cc961398134e2b",
   "no_python2": true,
   "recipe": "fuchsia/build",
   "shared_cache_snapshots_per_disk": 1,
