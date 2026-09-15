@@ -1,0 +1,20 @@
+{
+  "$fuchsia/rbe": {
+    "instance": "projects/rbe-fuchsia-prod/instances/default"
+  },
+  "$fuchsia/resultstore": {
+    "cas_instance": "projects/rbe-fuchsia-prod/instances/default",
+    "project_id": "fuchsia",
+    "results_url": "http://go/fxbtx",
+    "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
+  },
+  "affected_files_only": true,
+  "do_not_rebase_patch": true,
+  "emit_gerrit_comments": true,
+  "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/try/static-checks-affected-only.textproto",
+  "incremental_build": true,
+  "manifest": "flower",
+  "no_python2": true,
+  "recipe": "static_checks",
+  "remote": "https://fuchsia.googlesource.com/integration"
+}
