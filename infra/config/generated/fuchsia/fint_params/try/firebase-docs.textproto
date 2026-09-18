@@ -7,8 +7,6 @@ product: "products/core.gni"
 gn_args: "include_rustdoc = true"
 target_arch: X64
 include_prebuilt_binary_manifests: true
-ide_files: "json"
 cxx_rbe_enable: true
 include_default_ninja_target: true
-target_labels: "//build/rust:cargo_toml_gen"
 target_labels: "//bundles/kitchen_sink"
