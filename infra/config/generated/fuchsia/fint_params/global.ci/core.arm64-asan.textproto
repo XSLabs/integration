@@ -13,7 +13,6 @@ target_arch: ARM64
 variants: "asan-ubsan"
 variants: "host_asan-ubsan"
 include_prebuilt_binary_manifests: true
-include_host_tests: true
 test_durations_file: "prebuilt/infra/test_durations/fuchsia/core.arm64-asan.json"
 default_test_durations_file: "prebuilt/infra/test_durations/fuchsia/default.json"
 rust_rbe_enable: true
