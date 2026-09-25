@@ -2,6 +2,9 @@
   "$fuchsia/autocorrelator": {
     "ci_bucket": "global.ci"
   },
+  "$fuchsia/checkout": {
+    "package_cache": true
+  },
   "no_python2": true,
   "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",

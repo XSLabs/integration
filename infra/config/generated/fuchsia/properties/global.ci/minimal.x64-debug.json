@@ -1,4 +1,7 @@
 {
+  "$fuchsia/checkout": {
+    "package_cache": true
+  },
   "cache_key": "da60187388cb8c09074fc76840931b6117bfb55a974447279a1aaadbc7c6b121",
   "no_python2": true,
   "recipe": "fuchsia/fuchsia",
