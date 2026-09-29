@@ -1,7 +1,4 @@
 {
-  "$fuchsia/autocorrelator": {
-    "ci_bucket": "global.ci"
-  },
   "$fuchsia/rbe": {
     "instance": "projects/rbe-fuchsia-prod/instances/default"
   },
@@ -11,7 +8,6 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
-  "cache_key": "46ee842a63815fe8da3e701a47093269db3ee9890368184f0e34381a3a603e35",
   "no_python2": true,
   "recipe": "fuchsia/build",
   "spec": {
@@ -26,6 +22,5 @@
       "project": "integration",
       "remote": "https://fuchsia.googlesource.com/integration"
     }
-  },
-  "use_shared_cache": true
+  }
 }
