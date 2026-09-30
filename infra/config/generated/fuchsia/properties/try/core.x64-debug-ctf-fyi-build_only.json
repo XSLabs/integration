@@ -2,9 +2,6 @@
   "$fuchsia/autocorrelator": {
     "ci_bucket": "global.ci"
   },
-  "$fuchsia/checkout": {
-    "package_cache": true
-  },
   "$fuchsia/rbe": {
     "instance": "projects/rbe-fuchsia-prod/instances/default"
   },
