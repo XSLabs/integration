@@ -8,14 +8,13 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
-  "cache_key": "3d7fbbcc16e856958946ed1c6a8cf26e279efbd4117e03b73f8d279e5ba1bcbb",
   "no_python2": true,
   "recipe": "fuchsia/build",
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
       "enable_sandboxing": true,
-      "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/global.ci/workbench_eng.vim3-debug-lacewing-staging.textproto",
+      "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/global.ci/workbench_eng.vim3-balanced-lacewing.textproto",
       "incremental": true,
       "run_tests": true
     },
@@ -25,7 +24,6 @@
       "remote": "https://fuchsia.googlesource.com/integration"
     },
     "test": {
-      "allow_no_tests": true,
       "botanist_grace_period_secs": 60,
       "default_service_account": "artifact-readers@fuchsia-infra.iam.gserviceaccount.com",
       "enable_sandboxing": true,
@@ -33,8 +31,7 @@
       "max_attempts_per_test": 3,
       "swarming_expiration_timeout_secs": 18000,
       "swarming_grace_period_secs": 30,
-      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/workbench_eng.vim3-debug-lacewing-staging.textproto"
+      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/workbench_eng.vim3-balanced-lacewing.textproto"
     }
-  },
-  "use_shared_cache": true
+  }
 }

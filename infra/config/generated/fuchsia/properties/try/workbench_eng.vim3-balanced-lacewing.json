@@ -1,14 +1,17 @@
 {
-  "cache_key": "fa5e740317c81687d16d3d7edc38ee4af93d43bcfe09e18dc463dc042f586ec4",
+  "$fuchsia/autocorrelator": {
+    "ci_bucket": "global.ci"
+  },
   "no_python2": true,
+  "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
-  "shared_cache_snapshots_per_disk": 1,
-  "shared_cache_source_disks": 1,
+  "skip_building_fuchsia_on_cq_retry": true,
+  "skip_test_shards_on_cq_retry": true,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
       "enable_sandboxing": true,
-      "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/global.ci/core.vim3-debug-lacewing-staging.textproto",
+      "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/try/workbench_eng.vim3-balanced-lacewing.textproto",
       "incremental": true,
       "run_tests": true
     },
@@ -18,17 +21,15 @@
       "remote": "https://fuchsia.googlesource.com/integration"
     },
     "test": {
-      "allow_no_tests": true,
       "botanist_grace_period_secs": 60,
       "default_service_account": "artifact-readers@fuchsia-infra.iam.gserviceaccount.com",
       "enable_sandboxing": true,
-      "max_attempts": 1,
       "max_attempts_per_test": 3,
+      "skip_unaffected_tests": true,
       "swarming_expiration_timeout_secs": 18000,
       "swarming_grace_period_secs": 30,
-      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/core.vim3-debug-lacewing-staging.textproto"
+      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/try/workbench_eng.vim3-balanced-lacewing.textproto"
     }
   },
-  "use_shared_cache": true,
   "uses_subbuild": true
 }
