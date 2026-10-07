@@ -1,4 +1,7 @@
 {
+  "$fuchsia/autocorrelator": {
+    "ci_bucket": "global.ci"
+  },
   "$fuchsia/rbe": {
     "instance": "projects/rbe-fuchsia-prod/instances/default"
   },
@@ -8,7 +11,6 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
-  "cache_key": "39ec63e6d1b48d440f287e49ec2139f38d757f8d8f59cf387bac00c2d59a0eca",
   "no_python2": true,
   "recipe": "fuchsia/build",
   "spec": {
@@ -34,6 +36,5 @@
       "swarming_grace_period_secs": 30,
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/try/fuchsia.x64-balanced.textproto"
     }
-  },
-  "use_shared_cache": true
+  }
 }
