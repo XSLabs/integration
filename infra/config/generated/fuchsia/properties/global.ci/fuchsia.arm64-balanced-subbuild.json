@@ -8,16 +8,13 @@
     "results_url": "http://go/fxbtx",
     "resultstore_instance": "projects/rbe-fuchsia-prod/instances/default"
   },
-  "cache_key": "93e927153f5648ec2918b8b64c2fb906ad81b05fe4b489afa1e473f24462bdce",
   "no_python2": true,
   "recipe": "fuchsia/build",
-  "shared_cache_snapshots_per_disk": 6,
-  "shared_cache_source_disks": 2,
   "spec": {
     "artifact_gcs_bucket": "fuchsia-artifacts",
     "build": {
       "enable_sandboxing": true,
-      "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/global.ci/fuchsia.arm64-balanced-postsubmit.textproto",
+      "fint_params_path": "integration/infra/config/generated/fuchsia/fint_params/global.ci/fuchsia.arm64-balanced.textproto",
       "incremental": true,
       "run_tests": true
     },
@@ -30,11 +27,11 @@
       "botanist_grace_period_secs": 60,
       "default_service_account": "artifact-readers@fuchsia-infra.iam.gserviceaccount.com",
       "enable_sandboxing": true,
+      "max_attempts": 1,
       "max_attempts_per_test": 3,
       "swarming_expiration_timeout_secs": 18000,
       "swarming_grace_period_secs": 30,
-      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/fuchsia.arm64-balanced-postsubmit.textproto"
+      "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/global.ci/fuchsia.arm64-balanced.textproto"
     }
-  },
-  "use_shared_cache": true
+  }
 }
