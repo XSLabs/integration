@@ -4,9 +4,9 @@
 compilation_mode: COMPILATION_MODE_DEBUG
 board: "boards/x64.gni"
 product: "products/bringup_with_tests.gni"
-gn_args: "allowed_test_device_types = [ \"AEMU\", \"Intel NUC Kit NUC11TNHv5\", \"QEMU\" ]"
 gn_args: "basic_env_names = [ \"aemu\", \"nuc11\", \"qemu\" ]"
 gn_args: "build_should_trace_actions = true"
+gn_args: "enable_lock_dep = true"
 gn_args: "extra_kernel_test_images = [ \"eng.lk_debug_level_0\" ]"
 gn_args: "truncate_build_info_commit_date = true"
 host_labels: "//bundles/infra/build"
@@ -27,3 +27,4 @@ bazel_rbe_enable: true
 build_event_service: "resultstore_infra"
 build_event_service_ninja: "resultstore_infra"
 target_labels: "//bundles/buildbot/bringup"
+target_labels: "//bundles/boot_tests"
