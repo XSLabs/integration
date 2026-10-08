@@ -1,5 +1,5 @@
 {
-  "cache_key": "e213d97ea9b87f735f64ca75c87d58c3e1bbf19eba1143d2fc5409d35799ca41",
+  "cache_key": "1e53c739ed4255e7280a787072c5a5ed4fac5278a69ed1365b0ef2f0b18f92a4",
   "no_python2": true,
   "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
@@ -19,6 +19,7 @@
       "remote": "https://fuchsia.googlesource.com/integration"
     },
     "test": {
+      "allow_no_tests": true,
       "botanist_grace_period_secs": 60,
       "default_service_account": "artifact-readers@fuchsia-infra.iam.gserviceaccount.com",
       "enable_sandboxing": true,
