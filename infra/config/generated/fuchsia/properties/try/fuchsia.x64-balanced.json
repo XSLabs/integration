@@ -1,5 +1,7 @@
 {
-  "cache_key": "7ad3bfb55ee877dfca994fc3530ed62a96473ada32653fb82015bc511acd3bdb",
+  "$fuchsia/autocorrelator": {
+    "ci_bucket": "global.ci"
+  },
   "no_python2": true,
   "only_run_previously_failed_tests": true,
   "recipe": "fuchsia/fuchsia",
@@ -19,7 +21,6 @@
       "remote": "https://fuchsia.googlesource.com/integration"
     },
     "test": {
-      "allow_no_tests": true,
       "botanist_grace_period_secs": 60,
       "default_service_account": "artifact-readers@fuchsia-infra.iam.gserviceaccount.com",
       "enable_sandboxing": true,
@@ -30,6 +31,5 @@
       "testsharder_params_path": "integration/infra/config/generated/fuchsia/testsharder_params/try/fuchsia.x64-balanced.textproto"
     }
   },
-  "use_shared_cache": true,
   "uses_subbuild": true
 }
